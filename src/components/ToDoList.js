@@ -32,7 +32,7 @@ const ToDoList = () => {
           <textarea
             rows="4"
             cols="50"
-            className=" justify-center align-middle text-center flex-grow mx-2 px-2 py-2"
+            className="justify-center align-middle text-center flex-grow mx-2 px-2 py-2"
             placeholder="Log your tasks!"
             onChange={handleChange}
           />
@@ -45,11 +45,11 @@ const ToDoList = () => {
         />
       </form>
       {tasks.map
-        ? tasks.map((item, index) => (
+        ? tasks.map((item) => (
             <div className="flex">
               <ToDoElement id={item} task={item} key={item} />
               <button
-                className="flex  bg-purple-500 hover:bg-purple-700 text-white text-center font-bold my-2 mx-6 px-2 py-2 border border-purple-700 rounded"
+                className="flex bg-purple-500 hover:bg-purple-700 text-white text-center font-bold my-2 mx-6 px-2 py-2 border border-purple-700 rounded"
                 onClick={() => handleRemoveItem(item)}
               >
                 Remove
