@@ -4,7 +4,7 @@ import useLocalStorage from './hooks/useLocalStorage';
 import React, { useState } from 'react';
 
 const ToDoList = () => {
-  const [tasks, setTasks] = useLocalStorage('tasks', ['']);
+  const [tasks, setTasks] = useLocalStorage('tasks', []);
   const [input, setInput] = useState('');
 
   function handleChange(event) {
